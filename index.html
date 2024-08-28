@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titulo">
+        <h1>Encriptador y Desencriptador de Texto</h1>
+    </div>
+    
+    <div class="container">
+        <img src="imagenes/logoAlura.svg" alt="Descripción de la imagen" class="logo">
+        <label for="text"></label>
+        <textarea id="text" rows="5" placeholder= "Ingrese el texto aquí..."></textarea>
+        <button onclick="encryptText()">Encriptar</button>
+        <button onclick="decryptText()">Desencriptar</button>
+        <p id="mensajeError"></p>
+        <br>
+        <label for="result"></label>
+
+        <textarea id="result" rows="5" placeholder="Ningún mensaje fue encontrado" readonly></textarea>
+
+        <button onclick="limpiar()">Limpiar</button>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p> Desarrollado por Mariana Castro Araya.</p>
+            <ul class="footer-links">
+                <li><a href="https://github.com/Casttmari12">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/mariana-castro-1b2526245/">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

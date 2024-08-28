@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c7e2e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    margin: 0;
+}
+
+.container {
+    background: #c7e2e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ajusta para que se adapte mejor a diferentes tamaños de pantalla */
+    max-width: 600px;
+    margin: 20px auto;
+    flex: 1;
+}
+
+h1{
+    font-size: 3vw; 
+    text-align: center;
+    margin: 0; 
+}
+.titulo {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 25px 0;
+    color: #034b97;
+    
+}
+.logo {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    max-width: 100%; 
+    height: 48px;
+    left: 40px;
+    top: 40px;
+    
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #749e9b;
+    resize: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+#mensajeError {
+    color: rgb(196, 111, 111);
+}
+
+#result, #text {
+    display: block;
+    border: 1px solid #749e9b;
+    resize: none;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 90%;
+}
+
+.footer {
+    background-color: #034b97;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    border-top: 2px solid black;
+    width: 100%; /* Asegura que el footer abarque todo el ancho */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Tabletas */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: none;
+    }
+
+    h1 {
+        font-size: 5vw; 
+    }
+
+    .logo {
+        width: 80%;
+        height: 48px;
+       
+      
+        top: 65px;
+    }
+
+    textarea {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 12px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 375px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    .logo {
+        width: 70%;
+        height: 38px;
+       
+      
+        top: 70px;
+    }
+}
